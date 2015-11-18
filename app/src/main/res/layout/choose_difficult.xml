@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_difficult"
+        android:id="@+id/textView"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="29sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/baby_dif"
+        android:id="@+id/baby"
+        android:layout_gravity="center_horizontal"
+        android:width="130dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/easy_dif"
+        android:id="@+id/easy"
+        android:layout_gravity="center_horizontal"
+        android:width="130dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/med_dif"
+        android:id="@+id/medium"
+        android:layout_gravity="center_horizontal"
+        android:width="130dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hard_dif"
+        android:id="@+id/hard"
+        android:layout_gravity="center_horizontal"
+        android:width="130dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hardcore_dif"
+        android:id="@+id/hardcore"
+        android:layout_gravity="center_horizontal"
+        android:width="130dp"/>
+</LinearLayout>

@@ -21,8 +21,6 @@ public abstract class Figure extends Activity
         this.figureWidth = figureWidth;
     }
 
-    abstract public void update();
-
     public int getX() {
         return x;
     }

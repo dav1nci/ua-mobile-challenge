@@ -7,17 +7,16 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-public class Chip extends Figure
+public class Hero extends Figure
 {
     private static final double koeficient = 5;
 
     private float xy_angle;
     private float xz_angle;
-    private float zy_angle;
 
     protected SensorManager mSensorManager;
 
-    public Chip(Bitmap image, int screenWidth, int screenHeight, Context context, int figureHeight, int figureWidth)
+    public Hero(Bitmap image, int screenWidth, int screenHeight, Context context, int figureHeight, int figureWidth)
     {
         super(image, screenWidth, screenHeight, figureHeight, figureWidth);
         mSensorManager = (SensorManager)context.getSystemService(Context.SENSOR_SERVICE);
@@ -31,7 +30,6 @@ public class Chip extends Figure
             if (e.sensor.getType()==Sensor.TYPE_ACCELEROMETER) {
                 xy_angle = e.values[0];
                 xz_angle = e.values[1];
-                zy_angle = e.values[2];
             }
         }
         public void onAccuracyChanged(Sensor sensor, int accuracy) {}

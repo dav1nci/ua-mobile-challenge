@@ -19,11 +19,13 @@ public class Main extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.choose_difficult);
+        //------------get buttons from layout--------------
         baby = (Button)findViewById(R.id.baby);
         easy = (Button)findViewById(R.id.easy);
         medium = (Button)findViewById(R.id.medium);
         hard = (Button)findViewById(R.id.hard);
         hardcore = (Button)findViewById(R.id.hardcore);
+        //-------------------------------------------------
         baby.setOnClickListener(this);
         easy.setOnClickListener(this);
         medium.setOnClickListener(this);

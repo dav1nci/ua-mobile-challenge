@@ -17,18 +17,18 @@ public class GameField extends SurfaceView implements SurfaceHolder.Callback
     {
         float x = event.getX();
         float y = event.getY();
-        if (x > manager.getScreenWidth() - 100 && y < 100)
+        if (x > manager.getScreenWidth() - 100 && y < 100)//area to touch on screen
         {
             if (event.getAction() == MotionEvent.ACTION_DOWN)
             {
-                if (manager.getPauseResme().equals("Pause"))
+                if (manager.getPauseResume().equals("Pause"))
                 {
-                    manager.setPauseResme("Resume");
+                    manager.setPauseResume("Resume");
                     manager.mySuspend();
                     Log.d("q", "Pause");
                     return true;
                 }
-                manager.setPauseResme("Pause");
+                manager.setPauseResume("Pause");
                 manager.myResume();
                 return true;
             }
